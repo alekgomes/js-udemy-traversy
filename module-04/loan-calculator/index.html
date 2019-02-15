@@ -9,12 +9,11 @@
     <title>Calculadora de juros</title>
   </head>
   <body class="bg-dark">
-
     <div class="container">
       <div class="row">
         <div class="col-md-6 mx-auto">
           <div class="card card-body text-center mt-3">
-              <h1>Calculadora de juros</h1>
+              <h1 id="heading">Calculadora de juros</h1>
               <form id="form-group">
                 <!-- Input 'quantia do empréstimo' -->
                <div class="form-group">
@@ -27,13 +26,13 @@
                <div class="form-group">
                   <div class="input-group">
                     <label for="valor" class="input-group-text">%</label>
-                    <input id="valor"type="number" class="form-control" placeholder="Por centagem">
+                    <input id="porcentagem"type="number" class="form-control" placeholder="Por centagem">
                    </div>
                 </div>
                 <!-- Input 'anos para pagamento' -->
                 <div class="form-group">
                     <div class="input-group">
-                      <input id="valor"type="number" class="form-control" placeholder="Anos para pagar">
+                      <input id="anos-pagamento"type="number" class="form-control" placeholder="Anos para pagar">
                      </div>
                 </div>
                 <!-- Submit button -->
@@ -42,33 +41,35 @@
                 </div>                
               </form>
               <!-- LOADING -->
-              <!-- <div id="loading">
+              <div id="loading">
                 <img src="img/loading.gif" alt="Loading GIF">
-              </div> -->
-
-              <!-- RESULTADO -->
-              <h5>Resultado</h5>
-              <div class="form-group">
-                <div class="input-group">
-                  <label for="valor" class="input-group-text">Pagamento mensal</label>
-                  <input type="text" class="form-control"  readonly>
-                </div>
               </div>
 
+              <!-- RESULTADO -->
+              <div id="resultado">
+              <h5>Resultado</h5>
+              <!-- Pagamento mensal -->
+              <div class="form-group">
+                <div class="input-group">                  
+                  <label for="valor" class="input-group-text">Pagamento mensal</label>
+                  <input id="pagamento-mensal" type="text" class="form-control"  readonly>
+                </div>
+              </div>
+              <!-- Pagamento total -->
               <div class="form-group">
                   <div class="input-group">
                     <label for="valor" class="input-group-text">Pagamento total</label>
-                    <input type="text" class="form-control"  readonly>
+                    <input id='pagamento-total' type="text" class="form-control"  readonly>
                   </div>
               </div>
-
+              <!-- Total de juros -->
               <div class="form-group">
                   <div class="input-group">
                     <label for="valor" class="input-group-text">Total de juros</label>
-                    <input type="text" class="form-control"  readonly>
+                    <input id="juros-total" type="text" class="form-control"  readonly>
                   </div>
               </div>
-               
+            </div>             
           </div>
         </div>
       </div>
@@ -80,5 +81,6 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
   </body>
 </html>
