@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Calculadora de juros</title>
+  </head>
+  <body class="bg-dark">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <div class="card card-body text-center mt-3">
+              <h1>Calculadora de juros</h1>
+              <form id="form-group">
+                <!-- Input 'quantia do empréstimo' -->
+               <div class="form-group">
+                 <div class="input-group">
+                   <label for="valor" class="input-group-text">$</label>
+                   <input id="valor"type="number" class="form-control" placeholder="Quantia do empréstimo">
+                  </div>
+               </div>
+               <!-- Input 'por centagem' -->
+               <div class="form-group">
+                  <div class="input-group">
+                    <label for="valor" class="input-group-text">%</label>
+                    <input id="valor"type="number" class="form-control" placeholder="Por centagem">
+                   </div>
+                </div>
+                <!-- Input 'anos para pagamento' -->
+                <div class="form-group">
+                    <div class="input-group">
+                      <input id="valor"type="number" class="form-control" placeholder="Anos para pagar">
+                     </div>
+                </div>
+                <!-- Submit button -->
+                <div class="form-group">
+                  <input type="submit" class="btn btn-dark btn-block" value="Calculate">
+                </div>                
+              </form>
+              <!-- LOADING -->
+              <!-- <div id="loading">
+                <img src="img/loading.gif" alt="Loading GIF">
+              </div> -->
+
+              <!-- RESULTADO -->
+              <h5>Resultado</h5>
+              <div class="form-group">
+                <div class="input-group">
+                  <label for="valor" class="input-group-text">Pagamento mensal</label>
+                  <input type="text" class="form-control"  readonly>
+                </div>
+              </div>
+
+              <div class="form-group">
+                  <div class="input-group">
+                    <label for="valor" class="input-group-text">Pagamento total</label>
+                    <input type="text" class="form-control"  readonly>
+                  </div>
+              </div>
+
+              <div class="form-group">
+                  <div class="input-group">
+                    <label for="valor" class="input-group-text">Total de juros</label>
+                    <input type="text" class="form-control"  readonly>
+                  </div>
+              </div>
+               
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
