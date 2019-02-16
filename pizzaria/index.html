@@ -7,11 +7,123 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+    <style>
+      #incremento, #decremento{
+        margin: 0 20px;
+        color: white;
+        cursor: pointer;
+        font-weight: 900;
+        font-size: 1.4rem;
+      }
+    </style>
     <title>Hello, world!</title>
   </head>
-  <body>
-    <h1>Hello, world!</h1>
+  <body class="bg-dark">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mx-auto text-center">
+            <h1 class="text-white mt-3">Pizzaria do Jão</h1>
+            <form id="form">
+              <table class="table table-bordered text-white">
+                <thead>
+                  <tr>
+                    <th scope="col">Sabor</th>
+                    <th scope="col">Preço Unidade</th>
+                    <th scope="col">Quantidade</th>
+                    <th scope="col">Valor</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Mussarela</td>
+                    <td>
+                      R$
+                      <span id="preco">22.50</span>  
+                    </td>
+                    <td>                      
+                      <span id="incremento">+</span>
+                      <span id="quantidade">0</span>
+                      <span id="decremento">-</span>    
+                    </td>                    
+                    <td>
+                        <span>R$</span>
+                        <span id="valor">0.00</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Calabrasa</td>
+                    <td>
+                      R$
+                      <span id="preco">25.00</span>  
+                    </td>
+                    <td>
+                      <span id="incremento">+</span>
+                      <span id="quantidade">0</span>
+                      <span id="decremento">-</span>    
+                    </td>                    
+                    <td>
+                        <span>R$</span>
+                        <span id="valor">0.00</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Frango</td>
+                    <td>
+                      R$
+                      <span id="preco">24.00</span>
+                    </td>
+                    <td>
+                      <span id="incremento">+</span>
+                      <span id="quantidade">0</span>
+                      <span id="decremento">-</span>    
+                    </td>                    
+                    <td>
+                        <span>R$</span>
+                        <span id="valor">0.00</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Pepperoni</td>
+                    <td>
+                      R$
+                      <span id="preco">26.50</span>  
+                    </td>
+                    <td>
+                      <span id="incremento">+</span>
+                      <span id="quantidade">0</span>
+                      <span id="decremento">-</span>    
+                    </td>                    
+                    <td>
+                        <span>R$</span>
+                        <span id="valor">0.00</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Portuguesa</td>
+                    <td>
+                      R$
+                      <span id='preco'>23.00</span> 
+                    </td>
+                    <td>
+                      <span id="incremento">+</span>
+                      <span id="quantidade">0</span>
+                      <span id="decremento">-</span>   
+                    </td>                    
+                    <td>
+                        <span>R$</span>
+                        <span id="valor">0.00</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">Valor Total</td>                    
+                    <td colspan="2">R$ <span  id="valor-total">0</span></td>
+                  </tr>
+                </tbody>
+              </table>              
+            </form>
+        </div>        
+      </div>      
+  </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
