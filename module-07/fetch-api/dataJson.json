@@ -1,0 +1,22 @@
+[
+  {
+  "name":"Lucas Alek",
+  "age": 25,
+  "location":"Brazil"
+  },
+  {
+    "name":"Paulo Silveira",
+    "age": 37,
+    "location":"EUA"
+  },
+  {
+    "name":"Guilherme Campos",
+    "age": 22,
+    "location":"Brazil"
+  },
+  {
+    "name":"Murilo Rodrigues",
+    "age": 32,
+    "location":"Japon"
+  }
+]
