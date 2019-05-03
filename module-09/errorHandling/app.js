@@ -1,5 +1,5 @@
 try{
-  // Gerando um refere error
+  // Gerando um RefereError
   myFunction();
 }
 catch(err){
